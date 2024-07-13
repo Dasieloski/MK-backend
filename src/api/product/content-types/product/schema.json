@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "productName"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "CUP",
+        "USD"
+      ],
+      "default": "USD",
+      "required": true
+    },
+    "needleType": {
+      "type": "enumeration",
+      "enum": [
+        "Tipo: 3 RL",
+        "Tipo: 5 RL",
+        "Tipo: 7 RL",
+        "Tipo: 11 RS",
+        "Tipo: 15 RM",
+        "Tipo: 21 RM",
+        "Tipo: 15 M1",
+        "Tipo: 7 RM",
+        "Tipo: 9 RM",
+        "Tipo: 11 RM",
+        "Tipo: 1 RL",
+        "Tipo: 45 RM",
+        "Tipo: 49 RM"
+      ]
+    }
+  }
+}
