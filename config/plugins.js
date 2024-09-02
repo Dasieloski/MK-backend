@@ -12,13 +12,4 @@ module.exports = {
             },
         },
     },
-
-    // Configuración del plugin `strapi-neon-tech-db-branches`
-    'strapi-neon-tech-db-branches': {
-        enabled: true,
-        config: {
-            branchName: process.env.BRANCH_NAME, // Debe coincidir con 'nueva-rama'
-            // Otros parámetros de configuración si los hay
-        },
-    },
-};
+}
