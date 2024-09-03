@@ -13,7 +13,7 @@ module.exports = {
     'strapi-neon-tech-db-branches': {
         enabled: true,
         config: {
-            branchName: process.env.BRANCH_NAME || 'nueva-rama', // Usar la variable BRANCH_NAME
+            branchName: process.env.BRANCH_NAME || 'branch', // Usar la variable BRANCH_NAME
             neonApiKey: process.env.NEON_API_KEY, // Usar la variable de entorno NEON_API_KEY
             neonProjectName: process.env.NEON_PROJECT_NAME, // Usar la variable de entorno NEON_PROJECT_NAME
             neonRole: process.env.NEON_ROLE, // Usar la variable de entorno NEON_ROLE
